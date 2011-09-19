@@ -1,0 +1,8 @@
+if [[ -d "${rvm_path:-$HOME/.rvm}/environments" \
+  && -s "${rvm_path:-$HOME/.rvm}/environments/ruby-1.8.7@satisfaction" ]] ; then
+  \. "${rvm_path:-$HOME/.rvm}/environments/ruby-1.8.7@satisfaction"
+else
+  rvm --create  "ruby-1.8.7@satisfaction"
+fi
+
+alias ss='rails s'

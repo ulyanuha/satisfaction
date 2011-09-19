@@ -1,0 +1,12 @@
+%h1 Sign In
+
+= simple_form_for(@session, :url => sessions_path) do |f|
+  = f.error_notification
+
+  .inputs
+    = f.input :username
+    = f.input :password
+    = f.input :remember_me, :as => :boolean
+
+  .actions
+    = f.button :submit

@@ -1,0 +1,12 @@
+%h1 Sign up
+
+= simple_form_for(@user) do |f|
+  = f.error_notification
+
+  .inputs
+    = f.input :username
+    = f.input :password
+    = f.input :password_confirmation
+
+  .actions
+    = f.button :submit

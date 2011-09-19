@@ -1,0 +1,49 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+*/
+
+@import "bourbon";
+
+$gw-column: 45px;
+$gw-gutter: 16px;
+$box-shadow-color: #888;
+$text-shadow-color: #eee;
+$page-bg-color: #d0dddd;
+$content-bg-color: #c0cccc;
+
+body {
+  font-size: golden-ratio(14px, 0);
+  width: grid-width(16);
+  margin: 0 auto;
+  background-color: $page-bg-color;
+}
+
+div {
+  width: 100%;
+  padding: $gw-gutter;
+  background-color: transparent;
+}
+
+h1, h2, h3 {
+  text-shadow: 1px 1px $text-shadow-color;
+}
+
+#header {
+  font-size: golden-ratio(14px, 1);
+  margin-bottom: $gw-gutter;
+  text-shadow: 1px 1px $text-shadow-color;
+  @include border-radius(0px 0px 10px 10px);
+  @include box-shadow(1px 1px 2px 0 $box-shadow-color);
+  @include linear-gradient($page-bg-color, $content-bg-color);
+}
+
+#content {
+  @include border-radius(10px);
+  @include box-shadow(1px 1px 2px 0 $box-shadow-color);
+  @include linear-gradient($page-bg-color, $content-bg-color);
+}
+
+@import "welcome";

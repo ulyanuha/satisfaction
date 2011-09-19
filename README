@@ -1,0 +1,38 @@
+satisfaction_project
+
+# Project “Satisfaction”
+
+A polling application aimed for letting people know if they on the right way.
+
+# Entities
+
+• Users (login:string email:string)
+• Questions (body:text slug:string owner->user)
+• Answers (rate:integer 1..100)
+• Groups (name:string)
+
+# Use cases
+
+— sign up/in/out
+1.  User signs up
+2.  User signs in
+3.  User signs out
+
+— questions and answers
+4.  User creates a question
+5.  User see a question if they know it’s URL
+6.  User answers for a question (1 answer for each questions)
+7.  User updates his answer (re-answer)
+8.  User see the polling results on the question page
+9.  User see links for answered questions on his dashboard page
+
+— groups
+10. User creates a group
+11. User joins the group
+12. User leaves the group 
+13. User creates a question for a group
+
+— notifications
+14. User receives notification if someone in the group has created a new question
+15. User receives notification on voted question updates
+16. Question owner receives notifications on question updates
