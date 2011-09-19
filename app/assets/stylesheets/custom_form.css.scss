@@ -1,0 +1,11 @@
+input[type="text"], input[type="password"], input[type="url"], input[type="email"], input.text, input.title, textarea, select {
+  margin: 0 0 1em 0;
+}
+
+label { 
+  display: block;
+}
+
+.input.boolean {
+  label { display: inline; }
+}

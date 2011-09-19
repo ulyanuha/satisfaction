@@ -20,6 +20,7 @@ group :assets do
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
   gem 'bourbon'
+  gem 'blueprint-rails'
 end
 
 gem 'jquery-rails'

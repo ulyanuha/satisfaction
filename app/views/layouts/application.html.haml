@@ -15,4 +15,6 @@
         - else
           %li= link_to "Sign in", login_path
           %li= link_to "Sign up", signup_path
+    - flash.each do |name, msg|
+      = content_tag :div, msg, :class => "flash #{name}" if msg.is_a?(String)
     #content= yield
