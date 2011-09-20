@@ -20,11 +20,11 @@ A polling application aimed for letting people know if they on the right way.
 
 — questions and answers
 4.  User creates a question
-5.  User see a question if they know it’s URL
+5.  User can see a question if they know it’s URL
 6.  User answers for a question (1 answer for each questions)
 7.  User updates his answer (re-answer)
-8.  User see the polling results on the question page
-9.  User see links for answered questions on his dashboard page
+8.  User can see the polling results on the question page
+9.  User can see links for answered questions on his dashboard page
 
 — groups
 10. User creates a group
