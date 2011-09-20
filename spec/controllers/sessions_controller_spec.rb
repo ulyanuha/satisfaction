@@ -15,7 +15,7 @@ describe SessionsController do
       let(:pass) { 'password' }
       it { should redirect_to root_url }
       specify { assigns(:user).should == @user }
-      specify { flash[:notice].should match /successfully signed in/i}
+      specify { flash[:success].should match /successfully signed in/i}
     end
 
     context 'with incorrect username and password' do
@@ -31,7 +31,7 @@ describe SessionsController do
     before { login_user @user }
     action { delete :destroy }
 
-    specify { flash[:notice].should match /successfully signed out/i}
+    specify { flash[:success].should match /successfully signed out/i}
     it { should redirect_to root_url }
     # specify { controller.current_user.should be_nil }
   end
